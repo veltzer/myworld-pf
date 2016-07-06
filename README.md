@@ -9,3 +9,6 @@ to run: mvn tomcat:run
 
 to deploy: mvn tomcat7:deploy
 	- remember to run ~/install/apache-tomcat-XXX beforehand
+
+create eclipse project:
+	mvn eclipse:eclipse
