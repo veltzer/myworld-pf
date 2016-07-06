@@ -1,0 +1,4 @@
+user guide for prime faces:
+	http://www.primefaces.org/docs/guide/primefaces_user_guide_6_0.pdf
+showcase for prime faces:
+	http://www.primefaces.org/showcase/index.xhtml

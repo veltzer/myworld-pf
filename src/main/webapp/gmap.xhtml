@@ -5,12 +5,13 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+		<script src="https://maps.google.com/maps/api/js?key=AIzaSyAsCcl6tgJHB_srBw37HzfaUlmeuCGuWiI" type="text/javascript"></script>
+	</h:head>
 	<h:body>
 		<f:view>
-			<h1>Hello World PrimeFaces</h1>
-			<h:link value="gmap" outcome="gmap"/>
-			<br/>
-			<h:link value="editor" outcome="editor"/>
+			<p:gmap center="41.381542, 2.122893" zoom="15" type="HYBRID" style="width:100%;height:400px" />
 		</f:view>
 	</h:body>
 </html>
