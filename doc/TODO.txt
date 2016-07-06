@@ -1,0 +1,2 @@
+- protect the API key (don't have it in the code).
+- do a table demos.
