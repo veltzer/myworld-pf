@@ -17,6 +17,18 @@
 		</repository>
 	</repositories>
 	-->
+	<profiles>
+		<profile>
+			<id>tomcat-localhost</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<tomcat-server>localhost</tomcat-server>
+				<tomcat-url>https://localhost:8443/manager/text</tomcat-url>
+			</properties>
+		</profile>
+	</profiles>
 
 	<dependencies>
 	
@@ -49,6 +61,7 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
+			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
@@ -74,6 +87,16 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<server>${tomcat-server}</server>
+					<url>${tomcat-url}</url>
+					<path>/</path>
 				</configuration>
 			</plugin>
 		</plugins>
