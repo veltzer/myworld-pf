@@ -1,2 +1,8 @@
+- make the launching of eclipse have the project imported.
+	options:
+	- some talk about an '-import' flag to eclipse.
+	- maybe I can just create the relevant files in the workspace and that will
+	make the project 'imported'?
+
 - protect the API key (don't have it in the code).
 - do a table demos.
