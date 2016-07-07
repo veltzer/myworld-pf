@@ -27,7 +27,7 @@ folder='/tmp/workspace_current'
 # where is the eclipse to run
 eclipse=os.path.expanduser('~/install/eclipse-jee/eclipse')
 # remove and recreate the workspace everytime?
-remove_and_recreate=True
+remove_and_recreate=False
 # debug the script?
 debug=False
 
@@ -84,7 +84,10 @@ if pid==0:
 		folder,
 		'-pluginCustomization',
 		'support/pluginCustomization.ini',
-		'-fullscreen',
+		#'-application',
+		#'org.eclipse.cdt.managedbuilder.core.headlessbuild',
+		#'-import',
+		#'.',
 	], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 else:
 	# parent
