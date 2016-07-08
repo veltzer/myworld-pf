@@ -96,7 +96,9 @@
 				<configuration>
 					<server>${tomcat-server}</server>
 					<url>${tomcat-url}</url>
+					<!--
 					<path>/</path>
+					-->
 				</configuration>
 			</plugin>
 		</plugins>
