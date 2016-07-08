@@ -5,7 +5,8 @@ This script preps eclipse for my use by installing cdt and vrapper
 on it
 
 TODO:
-- check if the feature exists (see my eclipse notes about how to do that)
+- check if the features we install exist before we install them.
+This will save time (see my eclipse notes about how to do that)
 and only install the feature if it is missing.
 - the name 'neon' is hardcoded in this script. find out how to find
 the version of a specific eclipse without running it and remove
@@ -15,8 +16,8 @@ this hardcoding.
 ###########
 # imports #
 ###########
-import subprocess # for check_call
-import os.path # for isexe
+import subprocess # for check_call, DEVNULL
+import os.path # for isfile
 import os # for access, X_OK
 import sys # for exit, stderr
 
