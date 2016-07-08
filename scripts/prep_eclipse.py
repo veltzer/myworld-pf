@@ -16,10 +16,15 @@ this hardcoding.
 # imports #
 ###########
 import subprocess # for check_call
+import os.path # for isexe
+import os # for access, X_OK
+import sys # for exit, stderr
 
 ##############
 # parameters #
 ##############
+# what file to check to see that we are in an eclipse folder
+checkfile='eclipse'
 # show progress?
 progress=True
 # debug
@@ -33,6 +38,17 @@ features=[
 ########
 # code #
 ########
+
+def die(*args, **kwargs):
+	print(*args, file=sys.stderr, **kwargs)
+	sys.exit(1)
+
+# first check if this is an eclipse folder
+if not os.path.isfile(checkfile):
+	die('this is not an eclipse folder')
+if not os.access(checkfile, os.X_OK):
+	die('this is not an eclipse folder')
+
 for feature in features:
 	if progress:
 		print('doing feature [{0}]'.format(feature))
