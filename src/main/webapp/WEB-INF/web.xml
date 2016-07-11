@@ -44,6 +44,9 @@
 		<url-pattern>*.xhtml</url-pattern>
 	</servlet-mapping>
 
+	<!--
+	The next line is needed for embedded containers like jetty or glassfish to work
+	-->
 	<listener>
 		<listener-class>com.sun.faces.config.ConfigureListener</listener-class>
 	</listener>
