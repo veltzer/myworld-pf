@@ -2,3 +2,8 @@ user guide for prime faces:
 	http://www.primefaces.org/docs/guide/primefaces_user_guide_6_0.pdf
 showcase for prime faces:
 	http://www.primefaces.org/showcase/index.xhtml
+primefaces extensions:
+	https://github.com/primefaces-extensions/primefaces-extensions.github.com/wiki/Getting-Started
+	http://www.primefaces.org/showcase-ext/views/home.jsf
+search maven for jars:
+	http://search.maven.org/

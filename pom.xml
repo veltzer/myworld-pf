@@ -31,7 +31,7 @@
 	</profiles>
 
 	<dependencies>
-	
+
 		<!-- PrimeFaces -->
 		<dependency>
 			<groupId>org.primefaces</groupId>
@@ -44,7 +44,40 @@
 			<artifactId>primefaces-extensions</artifactId>
 			<version>6.0.0</version>
 		</dependency>
-		
+
+		<dependency>
+			<groupId>org.primefaces.extensions</groupId>
+			<artifactId>resources-ckeditor</artifactId>
+			<version>6.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.primefaces.extensions</groupId>
+			<artifactId>resources-codemirror</artifactId>
+			<version>6.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.lowagie</groupId>
+			<artifactId>itext</artifactId>
+			<version>4.2.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+		</dependency>
+
 		<!-- JSF -->
 		<dependency>
 			<groupId>com.sun.faces</groupId>
@@ -75,14 +108,14 @@
 			<artifactId>jsp-api</artifactId>
 			<version>2.2</version>
 		</dependency>
-		
+
 		<!-- EL -->
 		<dependency>
 			<groupId>org.glassfish.web</groupId>
 			<artifactId>el-impl</artifactId>
 			<version>2.2</version>
 		</dependency>
-		
+
 	</dependencies>
 	<build>
 		<plugins>
