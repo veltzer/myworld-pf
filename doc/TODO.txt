@@ -1,8 +1,9 @@
-- make the launching of eclipse have the project imported.
-	options:
-	- some talk about an '-import' flag to eclipse.
-	- maybe I can just create the relevant files in the workspace and that will
-	make the project 'imported'?
+- find out how to make new maven targets
+	and have one targets that builds deploy etc.
+- find out how to do command line completions right for maven.
+- find out how to print dependencies in maven.
+- add a jetty plugin to maven and have easy running without
+	external tomcat.
 
 - protect the API key (don't have it in the code).
-- do a table demos.
+	right now it is in: src/main/webapp/gmap.xhtml
