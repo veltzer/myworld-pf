@@ -1,4 +1,4 @@
-package com.meta.editor;
+package com.meta.beans;
 
 import javax.faces.bean.ManagedBean;
 
