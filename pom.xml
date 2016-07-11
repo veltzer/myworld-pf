@@ -38,6 +38,12 @@
 			<artifactId>primefaces</artifactId>
 			<version>6.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.primefaces.extensions</groupId>
+			<artifactId>primefaces-extensions</artifactId>
+			<version>6.0.0</version>
+		</dependency>
 		
 		<!-- JSF -->
 		<dependency>
