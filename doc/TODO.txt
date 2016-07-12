@@ -7,3 +7,9 @@
 
 - protect the API key (don't have it in the code).
 	right now it is in: src/main/webapp/gmap.xhtml
+
+- I can't run this project using tomcat and secure deployment on my laptop
+	because I don't have the keys (I think).
+	~/.keystore
+	~/.keystore.tomcat.cer
+	Have a script here to create those files.
