@@ -8,3 +8,7 @@ all:
 .PHONY: package
 package:
 	@mvn package
+
+.PHONY: jetty
+jetty:
+	@mvn jetty:run
