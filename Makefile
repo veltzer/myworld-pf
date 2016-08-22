@@ -1,5 +1,9 @@
 .PHONY: all
 all:
+	@true
+
+.PHONY: deploy
+deploy:
 	@mvn package
 	@mvn tomcat7:undeploy
 	@mvn tomcat7:deploy
