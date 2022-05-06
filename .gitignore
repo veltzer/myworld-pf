@@ -1,5 +1,7 @@
 *.class
 *.stamp
+/.pydmt/
+__pycache__/
 
 /target
 
