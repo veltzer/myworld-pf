@@ -30,7 +30,7 @@ src_dirs = ["."]
 command = "scripts/mvn_package.py"
 inputs = ["pom.xml"]
 input_globs = ["src/**/*"]
-output_files = ["target/myworld-pf.war"]
+output_files = ["target/myworld-pf-1.0.war"]
 
 [dependencies]
 system = ["maven"]
