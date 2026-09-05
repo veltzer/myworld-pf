@@ -1,5 +1,16 @@
 # rsconstruct build configuration for this repository.
 
+[analyzer.python]
+
+[processor.ruff]
+src_dirs = ["scripts"]
+
+[processor.pylint]
+src_dirs = ["scripts"]
+
+[processor.mypy]
+src_dirs = ["scripts"]
+
 [processor.shellcheck]
 src_dirs = ["scripts", "src"]
 args = ["--severity=error", "--shell=bash"]
@@ -8,6 +19,21 @@ args = ["--severity=error", "--shell=bash"]
 
 [processor.taplo]
 src_dirs = ["."]
+
+# ─── repo-specific configuration ────────────────────────────────────────────
+
+# The application is a maven war: pom.xml is its dependency manifest (there
+# is no other place for the PrimeFaces/JSF dependency closure) and maven does
+# the compile and packaging. rsconstruct owns the build and calls maven for
+# it, the same way the cargo processor drives cargo from Cargo.toml.
+[processor.explicit.war]
+command = "scripts/mvn_package.py"
+inputs = ["pom.xml"]
+input_globs = ["src/**/*"]
+output_files = ["target/myworld-pf.war"]
+
+[dependencies]
+system = ["maven"]
 
 # lint the GitHub Actions workflow files with actionlint
 [processor.actionlint]

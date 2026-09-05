@@ -1,9 +1,7 @@
 # myworld-pf
 Myworld implemented in prime faces
 
-to compile: mvn compile
-
-to package: mvn package
+to build (compiles and packages the war through maven): rsconstruct build
 
 to run: mvn tomcat:run
 
