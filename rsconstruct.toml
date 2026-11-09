@@ -32,6 +32,11 @@ command = "scripts/mvn_package.py"
 inputs = ["pom.xml"]
 input_globs = ["src/**/*"]
 output_files = ["target/myworld-pf-1.0.war"]
+# maven downloads its plugins and the dependency closure into ~/.m2
+sandbox_network = true
+# maven keeps its build state in target/ (classes, the exploded war) and
+# rewrites it on every package
+sandbox_writable = ["target"]
 
 [dependencies]
 system = ["maven"]
