@@ -11,5 +11,4 @@ to deploy: mvn tomcat7:deploy
     - deploy does not build, remember to build before.
     - deploy does not undeploy, remember to undeploy before.
 
-create eclipse project:
-    mvn eclipse:eclipse
+create eclipse project: mvn eclipse:eclipse
